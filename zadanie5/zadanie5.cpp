@@ -4,14 +4,12 @@ using namespace std;
 
 int main()
 {
-	int i, n, k;
-	double s;
+	int  n;
+	double s=1.0;
 	cin >> (n);
-	k = 1;
 	s = 1;
-	for (int i = 1; i < n; i++) {
-		k *= i;
-		s = s * (1 + 1 / pow(k, 2));
+	for (int i = 1; i <= n; i++) {
+		s *=  1 + 1 / (double)(i*i);
 	}
-	cout << (s);//ne robit ewe
+	cout << (s) << endl;
 }
