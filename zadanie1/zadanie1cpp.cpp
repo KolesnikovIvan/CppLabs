@@ -4,7 +4,7 @@
 using namespace std;
 int main()
 {
-	const double e = 2.78;
+	const double e = 2.71;
 	double x, y, z, a, b;
 	cin >> x;
 	cin >> y;
