@@ -7,8 +7,10 @@ int main()
 	int  n;
 	double s=1;
 	cin >> (n);
-	for (int i = 1; i <= n; i++) {
-		s *=  1 + 1 / (double)(i*i);
+	for (double i = 1; i <= n; i++)
+	{
+		s *=  1 + 1 / (i*i);
 	}
 	cout << (s) << endl;
+	return (0);
 }

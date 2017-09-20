@@ -2,26 +2,25 @@
 using namespace std;
 int main()
 {
-	int a, b, c, i;
+	int a, b, c;
 	cin >> a;
 	b = a;
 	c = 0;
-	i = 1;
 	for (int i = 1; i < 5; i++)
 	{
 		c = (c * 10) + (b % 10);
 		b = (b / 10);
 
 	}
-	cout << c;
+	cout << c << endl;
 
 	if (a == c)
 	{
-		cout << "   da";
+		cout << "DA" << endl;
 	}
 	else
 	{
-		cout << "   no";
+		cout << "NET" << endl;
 	}
 
 }

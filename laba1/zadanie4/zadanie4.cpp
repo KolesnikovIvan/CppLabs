@@ -19,6 +19,7 @@ int main()
 
 	cout << k << endl;
 	cout << c << endl;
+	return (0);
 
 }
 
