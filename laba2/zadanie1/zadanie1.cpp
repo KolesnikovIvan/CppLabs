@@ -5,18 +5,17 @@ ZADANIE 1
 */
 
 #include <iostream> 
-#include <cmath>
 using namespace std;
 
-void main()
+int main()
 
 {
 
 	int n = 1;
+	cin >> n;
 
 	int *a = new int[n];
 	double *b = new double[n];
-	cin >> n;
 	for (int i = 0; i < n; i++)
 	{
 		cin >> a[i];
@@ -38,6 +37,6 @@ void main()
 	}
 	delete[] a;
 	delete[] b;
-
+	return 0;
 
 }

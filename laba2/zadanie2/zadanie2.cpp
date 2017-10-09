@@ -8,7 +8,7 @@
 #include <iostream> 
 #include <cmath>
 using namespace std;
-void main()
+int main()
 
 {
 	const int n = 10;
@@ -39,5 +39,5 @@ void main()
 	}
 	for (i = 1; i < n; i++)
 		cout << arr[i] << "   ";
-	system("pause");
+	return 0;
 }
