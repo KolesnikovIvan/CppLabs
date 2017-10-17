@@ -1,4 +1,8 @@
-﻿#include <iostream>
+﻿/*4.	Дана матрица размерности nxm. 
+Получить одномерный массив a[m], 
+хранящий сумму элементов соответствующих столбцов матрицы, 
+являющихся простыми числами.*/
+#include <iostream>
 #include <cmath>
 using namespace std;
 //Проверка числа на простоту
@@ -8,7 +12,7 @@ int prost(int a)
 	if (a < 2) 
 	{
 		return 0;
-	}
+	} 
 	for (i = 2; i <= sq; i++) 
 	if ((int)a % i == 0) break;	
 	if (i == sq + 1) 
@@ -72,8 +76,8 @@ int main()
 	cout << endl;
 
 
-	delete Matr;		
-	delete A;		
+	delete[] Matr;		
+	delete[] A;		
 	system("pause");	
 	return 0;	
 }
