@@ -1,31 +1,61 @@
+/*3.	В текстовом файле INPUT.TXT записаны целые числа через пробел, возможно, в несколько строк.
+За один просмотр файла сформировать список этих чисел.
+Проверить наличие в списке заданного числа. Результат (ЕСТЬ или НЕТ) занести в текстовый файл OUTPUT.TXT.
+*/
 #include <iostream>
 #include <fstream>
-
 using namespace std;
-
 
 int main()
 {
-	char* i = new char[256];
+	setlocale(LC_ALL, "Russian");
+	ifstream fin("INPUT.txt");
+	ofstream fout("Output.txt");
+	int pr;
+	int k = 0;
+	cin >> pr;
 
-	ifstream ifile("Input.txt");
-	if (!ifile)
+	int* mas = new int[255];
+	for (int i = 0; i < 255; i++)
 	{
-		cout << "oshibka";
+		mas[i] = 0;
 	}
-	int k = 0, count = 0, a[256];
-	for (int j = 0; j < 256; j++)
+	int j = 0;
+	while (!fin.eof())
 	{
-		ifile.get(i, 2);
-		if (atoi(i) != 0)
+		char* buf = new char[255];
+		fin.getline(buf, 255);
+
+		for (int i = 0; i < 255; i++)
 		{
-			a[k] = atoi(i);
-			cout << "a[" << k << "]=" << a[k] << "\n";
-			count = ++count;
-			k = ++k;
+			while (isspace(static_cast<unsigned char>(buf[i])))
+				++i;
+			if (buf[i] == '\0')
+				break;
+			mas[j] = atoi(buf + i);
+			++j;
+			while (buf[i] != '\0' && !isspace(static_cast<unsigned char>(buf[i])))
+				++i;
+			k++;
+		}
+		for (int j = k; j > 0; j--)
+		{
+			if (mas[j] == pr)
+			{
+				fout << "EST'" << endl;
+				break;
+			}
+		}
+
+		if (!fout.eof())
+		{
+			fout << "net" << endl;
 		}
 	}
-	delete i;
-	ifile.close();
+	fin.close();
+	fout.close();
 
+	return 0;
 }
+
+

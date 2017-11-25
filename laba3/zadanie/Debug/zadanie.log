@@ -1,3 +1,4 @@
-﻿  zadanie1.cpp
-  zadanie.vcxproj -> D:\CppLabs\CppLabs\laba3\Debug\zadanie.exe
-  zadanie.vcxproj -> D:\CppLabs\CppLabs\laba3\Debug\zadanie.pdb (Full PDB)
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (Debug\) contains files shared from another project (zadanie.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  zadanie1.cpp
+  zadanie.vcxproj -> D:\CppLabs\CppLabs\laba3\Debug\zadanie3.exe
+  zadanie.vcxproj -> D:\CppLabs\CppLabs\laba3\Debug\zadanie3.pdb (Full PDB)
