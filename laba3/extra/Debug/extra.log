@@ -1,3 +1,4 @@
 ﻿  ExTra.cpp
-  extra.vcxproj -> D:\CppLabs\CppLabs\laba3\Debug\extra.exe
-  extra.vcxproj -> D:\CppLabs\CppLabs\laba3\Debug\extra.pdb (Full PDB)
+  LINK : не найден или не выполнена сборка D:\dubstepixabs\CppLabs\laba3\Debug\extra.exe при последней инкрементной компоновке; выполняется полная компоновка
+  extra.vcxproj -> D:\dubstepixabs\CppLabs\laba3\Debug\extra.exe
+  extra.vcxproj -> D:\dubstepixabs\CppLabs\laba3\Debug\extra.pdb (Full PDB)
