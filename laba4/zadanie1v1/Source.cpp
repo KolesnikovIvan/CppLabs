@@ -73,11 +73,8 @@ int main()
 		{
 			if (student[i + 1].group < student[i].group)
 			{
-				swap(student[i].surname, student[i - 1].surname);
-				swap(student[i].name, student[i - 1].name);
-				swap(student[i].otch, student[i - 1].otch);
-				swap(student[i].mark, student[i - 1].mark);
-				swap(student[i].group, student[i - 1].group);
+
+				swap(student[i],student[i - 1]);
 
 			}
 		}
