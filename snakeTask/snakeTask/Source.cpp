@@ -1,6 +1,7 @@
 #include <iostream>
 #include <conio.h>
 #include <windows.h>
+#include <fstream>
 using namespace std;
 bool gameover;
 const int width = 20;
@@ -129,7 +130,7 @@ void Logic()
 	} 
 	if (x > width || x < 0 || y> height || y < 0) //врезались ли в стенку
 		gameover = true;
-	/*
+	/* чтобы проходило сквозь стены
 	if (x >= width - 1)
 	x = 0;
 	else if (x < 0)
@@ -161,19 +162,33 @@ void Logic()
 
 int main()
 {
+	ofstream scr("SCORE.TXT");
 	Setup();
 	char *name = new char[100];
-	cout << "  ur name ";
+	cout << "ur name "<<endl;
 	cin >> name;
+	char key = 'y';
+		
+		while (key!='n')
+		{
+			while (!gameover)
+			{
+				Draw();
+				Input();
+				Logic();
 
-	while (!gameover)
-	{
-		Draw();
-		Input();
-		Logic();
 
+			}
+			system("cls");
+			
+			cout << " Add another  [Y/n] ";
+			key = _getch();
+			Setup();
+			scr << name << "   " << " score  :" << score << endl;
+	
+		}
+		
 
-	}
-
+	
 	return 0;
 }
