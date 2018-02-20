@@ -44,7 +44,7 @@ void Draw()
 			else
 			{
 				bool print = false;
-				for (int k = 0; k < nTail; k++)
+				for (int k = 0; k < nTail; k++) //увелечение хвоста
 				{
 					if (tailX[k] == j && tailY[k] == i)
 					{
