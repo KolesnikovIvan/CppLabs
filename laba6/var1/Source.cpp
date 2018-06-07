@@ -1,4 +1,4 @@
-#include<iostream>
+ï»¿#include<iostream>
 #include<conio.h>
 
 using namespace std;
@@ -14,9 +14,9 @@ public:
 	void Set()
 	{
 		double Re, Im;
-		cout << "Ââåäèòå öåëóþ ÷àñòü : ";
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ñ†ÐµÐ»ÑƒÑŽ Ñ‡Ð°ÑÑ‚ÑŒ : ";
 		cin >> Re;
-		cout << "Ââåäèòå ìíèìóþ ÷àñòü : ";
+		cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð¼Ð½Ð¸Ð¼ÑƒÑŽ Ñ‡Ð°ÑÑ‚ÑŒ : ";
 		cin >> Im;
 		this->real = Re;
 		this->image = Im;
@@ -74,7 +74,7 @@ public:
 	friend ostream &operator <<(ostream &out, Complex &p)
 
 	{
-		out << "Ðåçóëüòàò : " << p.real << " + " << p.image << " * -i" << endl;
+		out << "Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚ : " << p.real << " + " << p.image << " * -i" << endl;
 		return out;
 	}
 
@@ -90,23 +90,23 @@ int main()
 	bool the_end = false;
 	while (the_end == false)
 	{
-		cout << "×òî âû õîòèòå ñäåëàòü?" << endl;
+		cout << "Ð§Ñ‚Ð¾ Ð²Ñ‹ Ñ…Ð¾Ñ‚Ð¸Ñ‚Ðµ ÑÐ´ÐµÐ»Ð°Ñ‚ÑŒ?" << endl;
 		cout << "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ " << endl;
-		cout << "1.Çàäàòü êîìïëåêñíîå ÷èñëî" << endl;
-		cout << "2.Ñëîæåíèå êîìïëåêñíûõ ÷èñåë" << endl;
-		cout << "3.Âû÷èòàíèå êîñìïëåêñíûõ ÷èñåë" << endl;
-		cout << "4.Óìíîæåíèå êîìïëåêñíûõ ÷èñåë" << endl;
-		cout << "5.Âûõîä èç ìåíþ." << endl;
+		cout << "1.Ð—Ð°Ð´Ð°Ñ‚ÑŒ ÐºÐ¾Ð¼Ð¿Ð»ÐµÐºÑÐ½Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾" << endl;
+		cout << "2.Ð¡Ð»Ð¾Ð¶ÐµÐ½Ð¸Ðµ ÐºÐ¾Ð¼Ð¿Ð»ÐµÐºÑÐ½Ñ‹Ñ… Ñ‡Ð¸ÑÐµÐ»" << endl;
+		cout << "3.Ð’Ñ‹Ñ‡Ð¸Ñ‚Ð°Ð½Ð¸Ðµ ÐºÐ¾ÑÐ¼Ð¿Ð»ÐµÐºÑÐ½Ñ‹Ñ… Ñ‡Ð¸ÑÐµÐ»" << endl;
+		cout << "4.Ð£Ð¼Ð½Ð¾Ð¶ÐµÐ½Ð¸Ðµ ÐºÐ¾Ð¼Ð¿Ð»ÐµÐºÑÐ½Ñ‹Ñ… Ñ‡Ð¸ÑÐµÐ»" << endl;
+		cout << "5.Ð’Ñ‹Ñ…Ð¾Ð´ Ð¸Ð· Ð¼ÐµÐ½ÑŽ." << endl;
 		cout << "ZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ " << endl;
 
 		switch (_getch())
 		{
 		case '1':
 		{
-			cout << "Ïåðâîå ÷èñëî." << endl;
+			cout << "ÐŸÐµÑ€Ð²Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾." << endl;
 			x.Set();
 			cout << endl;
-			cout << "Âòîðîå ÷èñëî." << endl;
+			cout << "Ð’Ñ‚Ð¾Ñ€Ð¾Ðµ Ñ‡Ð¸ÑÐ»Ð¾." << endl;
 			y.Set();
 			break;
 
@@ -146,7 +146,7 @@ int main()
 
 		default:
 		{
-			cout << "Ââåäèòå åù¸ ðàç." << endl;
+			cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐµÑ‰Ñ‘ Ñ€Ð°Ð·." << endl;
 			break;
 
 		}
