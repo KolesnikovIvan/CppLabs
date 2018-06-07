@@ -1,4 +1,13 @@
-﻿#include<iostream>
+﻿/*Составить описание класса для представления комплексных чисел. 
+Обеспечить выполнение операций сложения, 
+вычитания и умножения комплексного числа на вещественное число.
+Предусмотреть поддержку числа в алгебраической форме. 
+Все операции реализовать в виде перегрузки операторов.
+Программа должна содержать меню, 
+позволяющее осуществлять проверку всех методов.
+*/
+
+#include<iostream>
 #include<conio.h>
 
 using namespace std;
@@ -86,7 +95,7 @@ public:
 int main()
 {
 	setlocale(LC_ALL, "Russian");
-	Complex x, y, z;
+	Complex x, y, answer;
 	bool the_end = false;
 	while (the_end == false)
 	{
@@ -114,8 +123,8 @@ int main()
 
 		case '2':
 		{
-			z = x + y;
-			cout << z;
+			answer = x + y;
+			cout << answer;
 
 			break;
 
@@ -123,16 +132,16 @@ int main()
 
 		case '3':
 		{
-			z = x - y;
-			cout << z;
+			answer= x - y;
+			cout << answer;
 
 			break;
 		}
 
 		case '4':
 		{
-			z = x * y;
-			cout << z;
+			answer = x * y;
+			cout << answer;
 
 			break;
 		}

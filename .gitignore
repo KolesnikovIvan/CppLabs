@@ -28,3 +28,17 @@ laba6/\.vs/var1/v15/ipch/AutoPCH/f72454f595b951c1/SOURCE\.ipch
 laba6/\.vs/var1/v15/Browse\.VC\.db
 
 laba6/\.vs/var1/v15/\.suo
+
+laba5/var1/Debug/Source\.obj
+
+laba5/var1/Debug/var1\.log
+
+*.tlog
+
+*.idb
+
+laba5/var1/var1\.vcxproj\.filters
+
+laba5/var1/var1\.vcxproj\.user
+
+laba5/var1/Debug/vc141\.pdb
